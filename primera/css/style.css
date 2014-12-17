@@ -1,0 +1,38 @@
+﻿body {
+    background-color:orange;
+
+}
+
+p {
+    text-decoration:underline;
+    color:aquamarine !important;    /* Important hace que se mantenga la propiedad corlor, aunque existen modificaciones más prioritarias */
+    font-style:oblique;
+}
+
+
+p {
+    color: white;   /* No consigue modificar el color, debido a la propiedad important */
+}
+
+
+/* p ~ ul : Selects every <ul> element that are preceded by a <p> element */
+
+div ~ h2 {
+    color:red;
+}
+
+/* div + p : Selects all <p> elements that are placed immediately after <div> elements */
+
+div + h2 {
+    color:green;
+}
+
+label[for="1"] {
+    color:blue;
+}
+
+input[type="text"] {
+    color:white;
+    background-color:blue;
+}
+
